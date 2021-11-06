@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F26D615F2736634800922DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D615E2736634800922DFD /* AppDelegate.swift */; };
+		F26D61612736634800922DFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D61602736634800922DFD /* SceneDelegate.swift */; };
+		F26D61662736634800922DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26D61642736634800922DFD /* Main.storyboard */; };
+		F26D61682736634900922DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26D61672736634900922DFD /* Assets.xcassets */; };
+		F26D616B2736634900922DFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26D61692736634900922DFD /* LaunchScreen.storyboard */; };
+		F26D6174273663AF00922DFD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F26D6173273663AF00922DFD /* Alamofire */; };
+		F26D6177273663F700922DFD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F26D6176273663F700922DFD /* Realm */; };
+		F26D6179273663F700922DFD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F26D6178273663F700922DFD /* RealmSwift */; };
+		F26D617B27366ABA00922DFD /* BlocksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D617A27366ABA00922DFD /* BlocksTableViewController.swift */; };
+		F26D617E27366AF600922DFD /* AccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D617D27366AF600922DFD /* AccountsTableViewController.swift */; };
+		F26D618027366B3B00922DFD /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D617F27366B3B00922DFD /* LocalDataManager.swift */; };
+		F26D618327366B8500922DFD /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D618227366B8500922DFD /* RequestManager.swift */; };
+		F26D618627366BFC00922DFD /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D618527366BFC00922DFD /* Block.swift */; };
+		F26D618827366C2900922DFD /* BlocksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D618727366C2900922DFD /* BlocksTableViewCell.swift */; };
+		F26D618A27366C3800922DFD /* AccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D618927366C3800922DFD /* AccountsTableViewCell.swift */; };
+		F26D618E27366DAD00922DFD /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D618D27366DAD00922DFD /* AddAccountViewController.swift */; };
+		F26D619027366DE700922DFD /* BlocksDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D618F27366DE700922DFD /* BlocksDetailsViewController.swift */; };
+		F26D619227366DFE00922DFD /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D619127366DFE00922DFD /* AccountDetailsViewController.swift */; };
+		F26D61962736800C00922DFD /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D61952736800C00922DFD /* NotificationName.swift */; };
+		F29733642736BF5200C04D53 /* AccountRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29733632736BF5200C04D53 /* AccountRequestManager.swift */; };
+		F29733662736C0ED00C04D53 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29733652736C0ED00C04D53 /* Account.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F26D615B2736634800922DFD /* Exam_bitcoin_explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exam_bitcoin_explorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26D615E2736634800922DFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F26D61602736634800922DFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F26D61652736634800922DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F26D61672736634900922DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F26D616A2736634900922DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F26D616C2736634900922DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26D617A27366ABA00922DFD /* BlocksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTableViewController.swift; sourceTree = "<group>"; };
+		F26D617D27366AF600922DFD /* AccountsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewController.swift; sourceTree = "<group>"; };
+		F26D617F27366B3B00922DFD /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		F26D618227366B8500922DFD /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		F26D618527366BFC00922DFD /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		F26D618727366C2900922DFD /* BlocksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTableViewCell.swift; sourceTree = "<group>"; };
+		F26D618927366C3800922DFD /* AccountsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewCell.swift; sourceTree = "<group>"; };
+		F26D618D27366DAD00922DFD /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		F26D618F27366DE700922DFD /* BlocksDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksDetailsViewController.swift; sourceTree = "<group>"; };
+		F26D619127366DFE00922DFD /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
+		F26D61952736800C00922DFD /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		F29733632736BF5200C04D53 /* AccountRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRequestManager.swift; sourceTree = "<group>"; };
+		F29733652736C0ED00C04D53 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F26D61582736634800922DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26D6179273663F700922DFD /* RealmSwift in Frameworks */,
+				F26D6177273663F700922DFD /* Realm in Frameworks */,
+				F26D6174273663AF00922DFD /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F26D61522736634800922DFD = {
+			isa = PBXGroup;
+			children = (
+				F26D615D2736634800922DFD /* Exam_bitcoin_explorer */,
+				F26D615C2736634800922DFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F26D615C2736634800922DFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F26D615B2736634800922DFD /* Exam_bitcoin_explorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F26D615D2736634800922DFD /* Exam_bitcoin_explorer */ = {
+			isa = PBXGroup;
+			children = (
+				F26D615E2736634800922DFD /* AppDelegate.swift */,
+				F26D61602736634800922DFD /* SceneDelegate.swift */,
+				F26D61642736634800922DFD /* Main.storyboard */,
+				F26D61672736634900922DFD /* Assets.xcassets */,
+				F26D61692736634900922DFD /* LaunchScreen.storyboard */,
+				F26D616C2736634900922DFD /* Info.plist */,
+				F26D618427366BED00922DFD /* Model */,
+				F26D617C27366AC200922DFD /* ViewControllers */,
+				F26D618127366B4200922DFD /* Managers */,
+				F26D61972736801200922DFD /* Extentions */,
+			);
+			path = Exam_bitcoin_explorer;
+			sourceTree = "<group>";
+		};
+		F26D617C27366AC200922DFD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F26D619327366E7100922DFD /* BlocksScreen */,
+				F26D619427366E8B00922DFD /* AccountsScreen */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F26D618127366B4200922DFD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F26D617F27366B3B00922DFD /* LocalDataManager.swift */,
+				F26D618227366B8500922DFD /* RequestManager.swift */,
+				F29733632736BF5200C04D53 /* AccountRequestManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F26D618427366BED00922DFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F26D618527366BFC00922DFD /* Block.swift */,
+				F29733652736C0ED00C04D53 /* Account.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F26D619327366E7100922DFD /* BlocksScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F26D617A27366ABA00922DFD /* BlocksTableViewController.swift */,
+				F26D618727366C2900922DFD /* BlocksTableViewCell.swift */,
+				F26D618F27366DE700922DFD /* BlocksDetailsViewController.swift */,
+			);
+			path = BlocksScreen;
+			sourceTree = "<group>";
+		};
+		F26D619427366E8B00922DFD /* AccountsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F26D617D27366AF600922DFD /* AccountsTableViewController.swift */,
+				F26D618927366C3800922DFD /* AccountsTableViewCell.swift */,
+				F26D619127366DFE00922DFD /* AccountDetailsViewController.swift */,
+				F26D618D27366DAD00922DFD /* AddAccountViewController.swift */,
+			);
+			path = AccountsScreen;
+			sourceTree = "<group>";
+		};
+		F26D61972736801200922DFD /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				F26D61952736800C00922DFD /* NotificationName.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F26D615A2736634800922DFD /* Exam_bitcoin_explorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26D616F2736634900922DFD /* Build configuration list for PBXNativeTarget "Exam_bitcoin_explorer" */;
+			buildPhases = (
+				F26D61572736634800922DFD /* Sources */,
+				F26D61582736634800922DFD /* Frameworks */,
+				F26D61592736634800922DFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exam_bitcoin_explorer;
+			packageProductDependencies = (
+				F26D6173273663AF00922DFD /* Alamofire */,
+				F26D6176273663F700922DFD /* Realm */,
+				F26D6178273663F700922DFD /* RealmSwift */,
+			);
+			productName = Exam_bitcoin_explorer;
+			productReference = F26D615B2736634800922DFD /* Exam_bitcoin_explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F26D61532736634800922DFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F26D615A2736634800922DFD = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = F26D61562736634800922DFD /* Build configuration list for PBXProject "Exam_bitcoin_explorer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F26D61522736634800922DFD;
+			packageReferences = (
+				F26D6172273663AF00922DFD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F26D6175273663F700922DFD /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
+			productRefGroup = F26D615C2736634800922DFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F26D615A2736634800922DFD /* Exam_bitcoin_explorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F26D61592736634800922DFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26D616B2736634900922DFD /* LaunchScreen.storyboard in Resources */,
+				F26D61682736634900922DFD /* Assets.xcassets in Resources */,
+				F26D61662736634800922DFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F26D61572736634800922DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26D617B27366ABA00922DFD /* BlocksTableViewController.swift in Sources */,
+				F26D619027366DE700922DFD /* BlocksDetailsViewController.swift in Sources */,
+				F29733662736C0ED00C04D53 /* Account.swift in Sources */,
+				F26D617E27366AF600922DFD /* AccountsTableViewController.swift in Sources */,
+				F26D618E27366DAD00922DFD /* AddAccountViewController.swift in Sources */,
+				F26D615F2736634800922DFD /* AppDelegate.swift in Sources */,
+				F29733642736BF5200C04D53 /* AccountRequestManager.swift in Sources */,
+				F26D618327366B8500922DFD /* RequestManager.swift in Sources */,
+				F26D618027366B3B00922DFD /* LocalDataManager.swift in Sources */,
+				F26D618A27366C3800922DFD /* AccountsTableViewCell.swift in Sources */,
+				F26D618827366C2900922DFD /* BlocksTableViewCell.swift in Sources */,
+				F26D61962736800C00922DFD /* NotificationName.swift in Sources */,
+				F26D618627366BFC00922DFD /* Block.swift in Sources */,
+				F26D61612736634800922DFD /* SceneDelegate.swift in Sources */,
+				F26D619227366DFE00922DFD /* AccountDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F26D61642736634800922DFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26D61652736634800922DFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F26D61692736634900922DFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26D616A2736634900922DFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F26D616D2736634900922DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F26D616E2736634900922DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F26D61702736634900922DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q6AD869SR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Exam_bitcoin_explorer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uponex.Exam-bitcoin-explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F26D61712736634900922DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q6AD869SR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Exam_bitcoin_explorer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uponex.Exam-bitcoin-explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F26D61562736634800922DFD /* Build configuration list for PBXProject "Exam_bitcoin_explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26D616D2736634900922DFD /* Debug */,
+				F26D616E2736634900922DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26D616F2736634900922DFD /* Build configuration list for PBXNativeTarget "Exam_bitcoin_explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26D61702736634900922DFD /* Debug */,
+				F26D61712736634900922DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F26D6172273663AF00922DFD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F26D6175273663F700922DFD /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F26D6173273663AF00922DFD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F26D6172273663AF00922DFD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F26D6176273663F700922DFD /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F26D6175273663F700922DFD /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		F26D6178273663F700922DFD /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F26D6175273663F700922DFD /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F26D61532736634800922DFD /* Project object */;
+}
